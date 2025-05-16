@@ -80,11 +80,8 @@ This is a Next.js TypeScript starter template with a well-rounded set of depende
 
 ---
 
-This setup provides a solid foundation for building scalable and maintainable Next.js applications with modern best practices.
-
-
-
 ## EsLint defined Boundaries
+
 ```txt
 src/
 ├── app/               # Application Layer (z.B. Seiten, Routing)
@@ -114,3 +111,46 @@ src/
 - **`entities`** can access **`shared`** (e.g., utils, libraries)
 
 - **`shared`** is universal and can reference itself
+
+---
+
+## Templates
+
+in the directory /templates are located templates for the following cases:
+
+- Github CI
+- Dockerfile
+
+---
+
+## (Optional) Deploy with Docker
+
+This guide shows you how to build and run your Next.js application inside a Docker container.
+
+---
+
+### 1. Create a Dockerfile
+
+In the root of your Next.js project, create a file named `Dockerfile` with the content from the /templates folder
+
+### 2. Build the Docker image
+
+Run this command in your project directory:
+
+```shell
+docker build -t nextjs-app .
+```
+
+### 3. Run the container
+
+```shell
+docker run -p 3000:3000 nextjs-app
+```
+
+### 4. (Optional) Use Docker Compose
+
+Create a docker-compose.yml file from the template and start it with:
+
+```shell
+docker compose up
+```
