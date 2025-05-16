@@ -77,6 +77,7 @@ This is a Next.js TypeScript starter template with a well-rounded set of depende
 - `lint` — Runs ESLint checks
 - `test` — Runs Jest tests
 - `cypress:open` — Opens Cypress test runner
+- `prepare:husky` — Automatically enables git hooks
 
 ---
 
