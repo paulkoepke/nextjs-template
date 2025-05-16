@@ -85,22 +85,21 @@ This is a Next.js TypeScript starter template with a well-rounded set of depende
 
 ```txt
 src/
-├── app/               # Application Layer (z.B. Seiten, Routing)
-├── features/          # Feature-spezifische Komponenten & Logik
+├── app/               # Application Layer
+├── features/          # Feature-specific components & logic
 │   ├── login/
 │   │   ├── ui/
 │   │   ├── model/
 │   │   └── api/
 │   └── profile/
-├── entities/          # Kern-Domänen-Modelle (z.B. User, Product)
+├── entities/          # Main domain models (ex. User, Product)
 │   ├── user/
 │   └── product/
-├── shared/            # Wiederverwendbare Komponenten, Utils, Hooks
+├── shared/            # Reusable components, utils, hooks
 │   ├── ui/
 │   ├── lib/
 │   ├── hooks/
 │   └── config/
-└── pages/             # Next.js Seiten (könnte auch in app/ sein)
 ```
 
 - **`app`** is allowed to access **`features`**, **`entities`**, and **`shared`**  
